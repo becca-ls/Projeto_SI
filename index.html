@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Adicione esta linha para vincular o arquivo CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="environment.js"></script>
+    <script src="searchStrategies.js"></script>
+    <script src="agent.js"></script>
+    <script src="goal.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <label for="searchType">Escolha o tipo de busca:</label>
+    <select id="searchType" class="custom-select">
+        <option value="1">BFS</option>
+        <option value="2">DFS</option>
+        <option value="3">A*</option>
+        <option value="4">Uniform Cost</option>
+        <option value="5">Greedy Best-First</option>
+    </select>
+    <button onclick="startSearch()" class="custom-button">Iniciar Busca</button>
+    <h3>Contador:</h3>
+    <p id="counter">0</p>
+</body>
+</html>
